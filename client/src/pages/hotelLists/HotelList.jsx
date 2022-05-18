@@ -1,7 +1,14 @@
 import "./hotelList.css";
+import Header from "../../components/header/Header";
+import Navbar from "../../components/navbar/Navbar";
 
 const HotelList = () => {
-  return <div>HotelList</div>;
+  return (
+    <div>
+      <Navbar />
+      <Header type = "list"/>
+    </div>
+  );
 };
 
 export default HotelList;

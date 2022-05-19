@@ -1,0 +1,12 @@
+.pContainer{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+}
+.pItem{
+    flex: 1;
+}
+.pImg{
+    height: 150px;
+    width: 100%;
+}

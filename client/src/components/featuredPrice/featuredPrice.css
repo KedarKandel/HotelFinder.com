@@ -1,0 +1,55 @@
+.fpContainer{
+    margin: 20px;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+   
+}
+
+.fpItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     height: 300px;
+    overflow: hidden;
+   
+}
+
+.fpImg{
+    margin-bottom: 5px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.fpItem>h4{
+    font-weight: 300;
+}
+.fpItem>h6{
+  font-size: 14px;
+}
+.fpItem>h4{
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.rating{
+    margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.rating>button{
+    background-color: #001D6E;
+    color: white;
+    margin-right: 15px;
+    border-radius:  7px 7px 5px 0 ;
+  }
+
+.rating>h6{
+    font-weight: 600;
+    font-size: 12px;
+}

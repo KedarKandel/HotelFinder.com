@@ -2,6 +2,7 @@ import FeaturedCities from "../../components/featuredCities/FeaturedCities"
 import FeaturedPrice from "../../components/featuredPrice/FeaturedPrice"
 import Header from "../../components/header/Header"
 import Navbar from "../../components/navbar/Navbar"
+import Newsletter from "../../components/newsletter/Newsletter"
 import Property from "../../components/property/Property"
 import "./home.css"
 
@@ -17,6 +18,10 @@ const Home = () => {
       <Property/>
       <h1 className="homeTitle">Homes guests love</h1>
       <FeaturedPrice/>
+      <div className="newsLetterContainer">
+      <Newsletter/>
+      </div>
+      
     </div>
     </>
   )

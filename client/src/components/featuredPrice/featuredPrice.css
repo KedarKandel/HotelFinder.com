@@ -9,33 +9,40 @@
 }
 
 .fpItem{
+  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
      height: 300px;
+     width: 100%;
     overflow: hidden;
-   
+
 }
 
-.fpImg{
+
+
+.fpImg{ 
     margin-bottom: 5px;
     height: 200px;
-    width: 100%;
+    width: 200px;
     object-fit: cover;
-    border-radius: 4px;
+
+    cursor: pointer;
 }
 
-.fpItem>h4{
+.fpName{
+    font-size: 20px;
     font-weight: 300;
-}
-.fpItem>h6{
-  font-size: 14px;
-}
-.fpItem>h4{
-    font-weight: 300;
-    margin-bottom: 3px;
 }
 
+.fpCity{
+    font-size: 20px;
+    font-weight: 500;
+}
+.fpPrice{
+    font-size: 14px;
+    font-weight: 400;
+}
 .rating{
     margin-top: 5px;
   display: flex;
@@ -49,7 +56,3 @@
     border-radius:  7px 7px 5px 0 ;
   }
 
-.rating>h6{
-    font-weight: 600;
-    font-size: 12px;
-}

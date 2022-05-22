@@ -1,12 +1,14 @@
 .navbar{
-    height: 50px;
+ 
+    height:60px;
     background-color: #001D6E;
     display: flex;
     justify-content: center;
+
 }
 
 .navbarContainer{
-    padding: 20px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;

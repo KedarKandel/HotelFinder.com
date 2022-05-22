@@ -16,3 +16,12 @@
     width: 1024px;
     font-size: 20px;
 }
+
+.newsLetterContainer{
+  height: 30vh;
+  width: 100%;
+  background-color: #001D6E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

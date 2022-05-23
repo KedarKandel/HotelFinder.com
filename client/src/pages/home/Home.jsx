@@ -1,5 +1,7 @@
+import Copyright from "../../components/copyright/copyright"
 import FeaturedCities from "../../components/featuredCities/FeaturedCities"
 import FeaturedPrice from "../../components/featuredPrice/FeaturedPrice"
+import Footer from "../../components/footer/Footer"
 import Header from "../../components/header/Header"
 import Navbar from "../../components/navbar/Navbar"
 import Newsletter from "../../components/newsletter/Newsletter"
@@ -21,7 +23,8 @@ const Home = () => {
       <div className="newsLetterContainer">
       <Newsletter/>
       </div>
-      
+      <Footer/>
+      <Copyright/>
     </div>
     </>
   )

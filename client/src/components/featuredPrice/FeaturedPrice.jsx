@@ -64,7 +64,7 @@ const FeaturedPrice = () => {
       </div>
       <div className="fpItem">
         <img
-          src="https://i.insider.com/5b50d6809695731a008b4828?width=700"
+          src="https://photos.mandarinoriental.com/is/image/MandarinOriental/geneva-2019-suite-penthouse-terrace-aperitifs-03?wid=1100&hei=733&fmt=jpeg&qlt=75,0&op_sharpen=0&resMode=sharp2&op_usm=1,1,5,0&iccEmbed=0&printRes=72&fit=crop&qlt=45,0"
           alt=""
           className="fpImg"
         />

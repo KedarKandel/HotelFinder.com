@@ -13,6 +13,8 @@ const HotelList = () => {
   const [options, setOptions] = useState(location.state.options);
   const [openDate, setOpenDate] = useState(false);
 
+  
+
   return (
     <div>
       <Navbar />

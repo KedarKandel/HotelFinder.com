@@ -14,12 +14,13 @@
 
 .search{
     flex: 1;
-    background-color: #FFBD35;
+    background-color: #C56824;
     padding: 10px;
     border-radius: 10px;
     position: sticky;
     top: 10px;
     color: white;
+    height: max-content;
 }
 .title{
     font-size: 25px;

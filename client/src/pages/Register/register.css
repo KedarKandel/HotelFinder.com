@@ -5,13 +5,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.title {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  top: 10px;
+  left: 20px;
+  text-shadow: 1px 1px 2px black;
 }
 
 .wrapper {
   padding: 20px 30px;
-  height: 350px;
-  width: 350px;
+  border-radius: 5px;
+  height: 70%;
+  width: 30%;
   background-color: white;
+  box-shadow: 0 1px 1px rgb(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +31,9 @@
 
 .heading {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   margin: 10px 0px;
+  text-transform: uppercase;
 }
 .inputFields {
   display: flex;
@@ -29,6 +42,7 @@
 }
 
 .inputFields > input {
+  padding: 3px;
   height: 40px;
   margin-bottom: 10px;
   width: 100%;
@@ -47,7 +61,7 @@
 }
 
 .line {
-  background-color: rgb(102, 97, 97);
+  background-color: gray;
   position: relative;
   margin-top: 20px;
   box-shadow: 0 1px 3px rgb(0, 0, 0, 0.8);
@@ -64,14 +78,25 @@
   border-radius: 35%;
   position: absolute;
   padding: 2px;
-
   top: -10px;
-  left: 40%;
+  left: 45%;
   background-color: white;
 }
 
 .socialMedia {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+}
+
+.socialMedia > svg {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.loginText {
+  margin-top: 20px;
+  font-weight: 400;
+  text-align: left;
+  width: 90%;
 }

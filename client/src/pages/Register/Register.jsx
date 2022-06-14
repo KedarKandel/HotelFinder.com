@@ -7,6 +7,9 @@ const Register = () => {
   return (
     <>
       <div className="container">
+        <a href="/" className="title">
+          HotelFinder.com
+        </a>
         <div className="wrapper">
           <div className="heading">Register your account</div>
           <div className="inputFields">
@@ -21,10 +24,17 @@ const Register = () => {
           </div>
 
           <div className="socialMedia">
-            <GoogleIcon />
-            <FacebookIcon />
-            <InstagramIcon />
+            <GoogleIcon style={{ color: "red" }} />
+            <FacebookIcon style={{ color: "blue" }} />
+            <InstagramIcon style={{ color: "crimson" }} />
           </div>
+
+          <h4 className="loginText">
+            Already have an account?
+            <a href="/login" style={{ marginLeft: "5px" }}>
+              Login
+            </a>
+          </h4>
         </div>
       </div>
     </>

@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: lightBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 20px 30px;
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+.inputFields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputFields > input {
+  height: 40px;
+  margin-bottom: 10px;
+  width: 100%;
+  outline: none;
+}
+.inputFields > button {
+  height: 40px;
+  margin-top: 10px;
+  padding: 3px 5px;
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.line {
+  background-color: rgb(102, 97, 97);
+  position: relative;
+  margin-top: 20px;
+  box-shadow: 0 1px 3px rgb(0, 0, 0, 0.8);
+  height: 1.5px;
+  width: 95%;
+}
+
+.or {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(170, 160, 160);
+  border: 1px solid rgb(156, 151, 151);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  border-radius: 35%;
+  position: absolute;
+  padding: 2px;
+
+  top: -10px;
+  left: 40%;
+  background-color: white;
+}
+
+.socialMedia {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}

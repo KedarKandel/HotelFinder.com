@@ -1,17 +1,25 @@
-import "./navbar.css"
+import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
-        <div className="navbarContainer">
-            <span className="logo">HotelFinder.com</span>
-            <div className="navmenu">
-                <button className="navBtn">Register</button>
-                <button className="navBtn">SignIn</button>
-            </div>
-        </div>
-    </div>
-  )
-}
+      <div className="navbarContainer">
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">HotelFinder.com</span>
+        </Link>
 
-export default Navbar
+        <div className="navmenu">
+          <Link to="/register">
+            <button className="navBtn">Register</button>
+          </Link>
+          <Link to="/login">
+            <button className="navBtn">SignIn</button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

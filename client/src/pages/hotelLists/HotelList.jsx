@@ -6,6 +6,7 @@ import { format } from "date-fns";
 import { useState } from "react";
 import { DateRange } from "react-date-range";
 import SearchItem from "../../components/searchItem/SearchItem";
+import { searchItemData } from "../../data/Data";
 
 const HotelList = () => {
   const location = useLocation();
@@ -13,8 +14,6 @@ const HotelList = () => {
   const [date, setDate] = useState(location.state.date);
   const [options, setOptions] = useState(location.state.options);
   const [openDate, setOpenDate] = useState(false);
-
-
 
   return (
     <div>
@@ -52,44 +51,50 @@ const HotelList = () => {
                 <span className="optionText">
                   Min Price <small>per night</small>
                 </span>
-                <input type="text" className="optionInput"/>
+                <input type="text" className="optionInput" />
               </div>
               <div className="searchItemOption">
                 <span className="optionText">
                   Max Price <small>per night</small>
                 </span>
-                <input type="text" className="optionInput"/>
+                <input type="text" className="optionInput" />
               </div>
               <div className="searchItemOption">
                 <span className="optionText">
                   Adult <small>per night</small>
                 </span>
-                <input type="number" min={1} className="optionInput" placeholder={options.adult} />
+                <input
+                  type="number"
+                  min={1}
+                  className="optionInput"
+                  placeholder={options.adult}
+                />
               </div>
               <div className="searchItemOption">
-                <span className="optionText">
-                  Children 
-                </span>
-                <input type="number" min={0} className="optionInput" placeholder={options.children}/>
+                <span className="optionText">Children</span>
+                <input
+                  type="number"
+                  min={0}
+                  className="optionInput"
+                  placeholder={options.children}
+                />
               </div>
               <div className="searchItemOption">
-                <span className="optionText">
-                  Rooms
-                </span>
-                <input type="number" min={1} className="optionInput" placeholder={options.room} />
+                <span className="optionText">Rooms</span>
+                <input
+                  type="number"
+                  min={1}
+                  className="optionInput"
+                  placeholder={options.room}
+                />
               </div>
             </div>
             <button className="searchBtn">Search</button>
           </div>
           <div className="result">
-            <SearchItem/>
-            <SearchItem/>
-            <SearchItem/>
-            <SearchItem/>
-            <SearchItem/>
-            <SearchItem/>
-            <SearchItem/>
-            <SearchItem/>
+            {searchItemData.map((item) => (
+              <SearchItem key={item.id} item={item} />
+            ))}
           </div>
         </div>
       </div>
